@@ -30,18 +30,33 @@ for ($f=0;$f<3;$f++)
 $v=500;
 for ($c=0;$c<3;$c++) {
     for ($f=0;$f<3;$f++) {
-        $numeros[$f][$c]=$v;
+        $n[$f][$c]=$v;
         $v+=20;
     }
 }
 echo "<br><br>";
 for ($c=0;$c<3;$c++)
     {for ($f=0;$f<3;$f++)
-        {echo$numeros[$f][$c]." ";}
-        echo "<br>";
+        {echo$n[$f][$c]." ";}
+        echo "<br>";}
+
+        echo "<br><br>";
 
 
 
+    $n1=array();
+$v1=$valor+$v;
+for ($f=0;$f<3;$f++) {
+    for ($c=0;$c<3;$c++) {
+        $n1[$f][$c]=$numeros[$f][$c]+$n[$f][$c];
+        $valor+=0;
+    }
+}
+
+for ($f=0;$f<3;$f++)
+    {for ($c=0;$c<3;$c++)
+        {echo$n1[$f][$c]." ";}
+        echo "<br  >";
 
     }
 
